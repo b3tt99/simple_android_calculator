@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="Simple Calculator"
+        app:layout_constraintBottom_toTopOf="@+id/txtanswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="27dp"
+        android:text="Display"
+        app:layout_constraintBottom_toTopOf="@+id/edtfirstnumber"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtfirstnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="227dp"
+        android:layout_marginBottom="227dp"
+        android:ems="10"
+        android:hint="Enter first number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btndivide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtsecondnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtfirstnumber"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirstnumber" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="21dp"
+        android:text="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/btnmultiply"
+        app:layout_constraintStart_toStartOf="@+id/btnmultiply" />
+
+    <Button
+        android:id="@+id/btnmultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="21dp"
+        android:text="MULTIPLY"
+        app:layout_constraintBottom_toTopOf="@+id/btndivide"
+        app:layout_constraintStart_toStartOf="@+id/btnsubtract" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="DIVIDE"
+        app:layout_constraintBottom_toTopOf="@+id/btnsubtract"
+        app:layout_constraintStart_toStartOf="@+id/btnsubtract" />
+
+    <Button
+        android:id="@+id/btnsubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="126dp"
+        android:text="SUBTRACT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
